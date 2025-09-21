@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank FAQs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      margin: 0;
+      padding: 0;
+    }
+    .faq-container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0b64d3;
+    }
+    .faq {
+      border-bottom: 1px solid #ddd;
+      padding: 12px 0;
+    }
+    .faq button {
+      background: none;
+      border: none;
+      width: 100%;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 10px;
+      cursor: pointer;
+      outline: none;
+      color: #111827;
+    }
+    .faq button:hover {
+      color: #0b64d3;
+    }
+    .faq-content {
+      display: none;
+      padding: 0 10px 10px 10px;
+      color: #444;
+      font-size: 14px;
+    }
+    .faq.active .faq-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq">
+      <button>1. How do I apply for a credit card?</button>
+      <div class="faq-content">
+        <p>You can apply online through our website’s application form or visit the nearest branch with your ID and income proof.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button>2. What documents are required to open a savings account?</button>
+      <div class="faq-content">
+        <p>You will need valid identity proof (Aadhaar, PAN, Voter ID), address proof, and recent passport-size photographs.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button>3. How can I reset my internet banking password?</button>
+      <div class="faq-content">
+        <p>Go to the login page, click “Forgot Password”, and follow the steps using your registered mobile number and email.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button>4. Is my online banking secure?</button>
+      <div class="faq-content">
+        <p>Yes. We use SSL encryption and multi-factor authentication to ensure your data and transactions remain secure.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const faqs = document.querySelectorAll(".faq button");
+    faqs.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const parent = btn.parentElement;
+        parent.classList.toggle("active");
+      });
+    });
+  </script>
+</body>
+</html>

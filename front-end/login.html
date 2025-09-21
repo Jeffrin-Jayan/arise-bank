@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - ARISE</title>
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo"><a href="index.html">ARISE</a></div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="front.html">Home</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2>Login</h2>
+  <form action="backend/login.php" method="POST">
+    <label>Email:</label>
+    <input type="email" name="email" required>
+    <label>Password:</label>
+    <input type="password" name="password" required>
+    <button type="submit" class="btn-primary">Login</button>
+  </form>
+  <p>Don't have an account? <a href="signup.html">SignUp</a></p>
+</main>
+
+<footer class="site-footer">
+  <!-- same footer as index.html -->
+</footer>
+</body>
+</html>
