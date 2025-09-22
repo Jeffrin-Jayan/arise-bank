@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - ARISE</title>
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"><a href="front.html">ARISE</a></div>
+      <!-- <nav class="site-nav">
+        <ul>
+          <li><a href="front.html">Home</a></li>
+          <li><a href="account.html">Accounts</a></li>
+          <li><a href="transaction.html">Transactions</a></li>
+          <li><a href="loans.html">Loans</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav> -->
+    </div>
+  </header>
+
+<main class="container">
+  <h2>Login</h2>
+  <form action="/login" method="POST">
+    <label>Email:</label>
+    <input type="email" name="email" required>
+    <label>Password:</label>
+    <input type="password" name="password" required>
+    <button type="submit" class="btn-primary">Login</button>
+  </form>
+  <p>Don't have an account? <a href="register.html">SignUp</a></p>
+</main>
+
+ <footer class="site-footer">
+    <div class="footer-bottom">
+      <p>© 2025 ARISE. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
