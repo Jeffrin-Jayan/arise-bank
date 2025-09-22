@@ -15,7 +15,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="logo"><a href="front.html">ARISE</a></div>
-      <nav class="site-nav">
+      <!-- <nav class="site-nav">
         <ul>
           <li><a href="front.html">Home</a></li>
           <li><a href="account.html">Accounts</a></li>
@@ -23,14 +23,14 @@
           <li><a href="loans.html">Loans</a></li>
           <li><a href="about.html">About Us</a></li>
         </ul>
-      </nav>
+      </nav> -->
     </div>
   </header>
 
   <!-- Main Form -->
   <main class="container">
     <h2>Open Account</h2>
-    <form action="backend/add_customer.php" method="POST">
+    <form action="back-end/add_customer.php" method="POST">
       <label>Full Name:</label>
       <input type="text" name="name" required>
 
@@ -49,6 +49,10 @@
       <label>Aadhar Number:</label>
       <input type="text" name="aadhar_no" required>
 
+      <label>Password:</label>
+      <input type="password" name="password" required>
+
+
       <button type="submit" class="btn-primary">Register</button>
     </form>
     <p>Already have an account? <a href="login.html">Login here</a></p>
@@ -56,30 +60,6 @@
 
   <!-- Footer (from Transactions page) -->
   <footer class="site-footer">
-    <div class="container footer-top">
-      <div class="footer-col">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="account.html">Savings</a></li>
-          <li><a href="loans.html">Loans</a></li>
-          <li><a href="credit.html">Credit Cards</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Support</h4>
-        <ul>
-          <li><a href="help.html">Help Center</a></li>
-          <li><a href="faq.html">FAQs</a></li>
-          <li><a href="branches.html">Branch Locator</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>About</h4>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-        </ul>
-      </div>
-    </div>
     <div class="footer-bottom">
       <p>© 2025 ARISE. All rights reserved.</p>
     </div>

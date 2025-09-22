@@ -42,29 +42,28 @@ body {
 
 /* Header Styles */
 .site-header {
-  background: var(--white);
-  box-shadow: var(--shadow-card);
+  background: #003366;
+  color: #fff;
+  padding: 1rem 0;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .header-inner {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo a {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--banking-blue);
+  font-size: 2rem;
+  font-weight: 600;
   text-decoration: none;
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #fff;
 }
 
 .site-nav ul {

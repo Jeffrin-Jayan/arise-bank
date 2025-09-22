@@ -1,3 +1,23 @@
+:root {
+  --banking-blue: hsl(210, 85%, 22%);
+  --banking-light: hsl(210, 40%, 96%);
+  --banking-accent: hsl(200, 90%, 45%);
+  --text-primary: hsl(210, 20%, 15%);
+  --text-muted: hsl(210, 15%, 45%);
+  --border: hsl(210, 20%, 85%);
+  --background: hsl(210, 30%, 97%);
+  --white: hsl(0, 0%, 100%);
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, hsl(210, 85%, 22%), hsl(200, 90%, 45%));
+  --gradient-subtle: linear-gradient(180deg, hsl(210, 30%, 97%), hsl(210, 25%, 92%));
+  --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%), hsl(210, 25%, 98%));
+  
+  /* Shadows */
+  --shadow-elegant: 0 10px 30px -5px hsl(210, 85%, 22%, 0.1);
+  --shadow-card: 0 4px 20px -2px hsl(210, 85%, 22%, 0.08);
+  --shadow-form: 0 8px 32px -8px hsl(210, 85%, 22%, 0.12);
+}
 /* ===== Base Styles ===== */
 * {
   box-sizing: border-box;
@@ -76,7 +96,7 @@ form {
   flex-direction: column;
 }
 
-form h2 {
+ h2 {
   text-align: center;
   margin-bottom: 25px;
   font-size: 26px;
@@ -97,7 +117,8 @@ label {
 /* Inputs & Select */
 input[type="text"],
 input[type="email"],
-input[type="date"] {
+input[type="date"],
+input[type="password"] {
   width: 100%;
   padding: 12px 14px;
   margin-bottom: 18px;
@@ -110,7 +131,8 @@ input[type="date"] {
 
 input[type="text"]:focus,
 input[type="email"]:focus,
-input[type="date"]:focus {
+input[type="date"]:focus,
+input[type="password"]:focus {
   border-color: #003366;
   box-shadow: 0 0 8px rgba(0, 51, 102, 0.2);
 }
@@ -134,51 +156,63 @@ button.btn-primary:hover {
   transform: scale(1.03);
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
-
-/* ===== Footer ===== */
-.site-footer {
-  background: #003366;
-  color: #fff;
-  padding-top: 3rem;
-  margin-top: 3rem;
+main p {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--text-muted);
 }
 
-.footer-top {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 2rem;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto 2rem auto;
-}
-
-.footer-col h4 {
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-col a {
-  color: #fff;
+main p a {
+  color: var(--banking-blue);
   text-decoration: none;
-  display: block;
-  margin-bottom: 0.5rem;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
-.footer-col a:hover {
-  color: #ffcc00;
+main p a:hover {
+  color: var(--banking-accent);
+  text-decoration: underline;
 }
 
-.footer-bottom {
-  text-align: center;
-  padding: 1rem 0;
-  border-top: 1px solid rgba(255,255,255,0.2);
-}
+/* ===== Footer ===== */
+.site-footer {
+      background: #003366;
+      color: #fff;
+      
+      margin-top: 3rem;
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 2rem;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto 2rem auto;
+    }
+    .footer-col h4 {
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+    }
+    /* .footer-col a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+      transition: color 0.3s ease;
+    } */
+    .footer-col a:hover {
+      color: #ffcc00;
+    }
+    .footer-bottom {
+      text-align: center;
+      padding: 1rem 0;
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {

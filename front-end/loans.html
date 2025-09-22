@@ -30,12 +30,12 @@
   <!-- Main Content -->
   <main class="container">
     <h2>Loans</h2>
-    <form action="backend/add_loan.php" method="POST">
+    <form action="back-end/add_loan.php" method="POST">
       <label>Customer ID:</label>
       <input type="number" name="customer_id" required>
 
       <label>Aadhaar ID:</label>
-      <input type="number" name="aadhaar_id" pattern="\d{12}" maxlength="12" placeholder="12-digit Aadhaar number" required>
+      <input type="number" name="aadhaar_no" pattern="\d{12}" maxlength="12" placeholder="12-digit Aadhaar number" required>
 
       <label>Branch ID:</label>
       <input type="number" name="branch_id" required>
