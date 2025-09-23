@@ -29,7 +29,7 @@
 
   <!-- Main Form -->
   <main class="container">
-    <h2>Open Account</h2>
+    <h2>Sign Up</h2>
       <form action="/add_customer" method="POST">      
       <label>Full Name:</label>
       <input type="text" name="name" required>
@@ -47,7 +47,7 @@
       <input type="text" name="address" required>
 
       <label>Aadhar Number:</label>
-      <input type="text" name="aadhar_no" required>
+      <input type="text" pattern="\d{12}" maxlength="12" placeholder="12-digit Aadhaar number" name="aadhar_no" required>
 
       <label>Password:</label>
       <input type="password" name="password" required>

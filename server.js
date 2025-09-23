@@ -16,8 +16,11 @@ const loginRouter = require("./back-end/routes/login");
 const addTransactionRouter = require("./back-end/routes/add_transaction");
 const addLoanRouter = require("./back-end/routes/add_loan");  
 const addAccountRouter = require("./back-end/routes/add_account");
+const branchesRouter = require("./back-end/routes/branches");
+
 
 // Use backend routes
+app.use("/branches", branchesRouter);
 app.use("/add_customer", addCustomerRouter); 
 app.use("/login", loginRouter);
 app.use("/add_transaction", addTransactionRouter);
